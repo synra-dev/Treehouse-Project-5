@@ -1,6 +1,8 @@
 const gallery = new Gallery();
 const modal = new Modal();
 
+// display message while retrieving data
+gallery.node.innerHTML = "Please wait! Retrieving data from the server";
 // create search form and append it to the DOM
 const form = document.createElement("form");
 document.querySelector(".search-container").appendChild(form);

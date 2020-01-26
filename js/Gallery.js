@@ -12,6 +12,7 @@ class Gallery {
     // function that will append each entries to the gallery node
     async appendCards() {
         const cards = await this.cards;
+        this.node.innerHTML = "";
         cards.forEach(card => {
             this.node.appendChild(card.node);
         })
